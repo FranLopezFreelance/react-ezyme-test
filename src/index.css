@@ -35,6 +35,8 @@ ul {
 }
 
 .gif {
+  color: black;
+  text-decoration: none; 
   width: 180px;
   height: 180px;
   display: inline-block;
@@ -48,8 +50,13 @@ ul {
 
 .gif:hover {
   background: rgb(241, 239, 228);
+  border: 1px solid brown;
 }
 
 .gif-img {
   width: 180px;
+}
+
+.loading {
+  color: gray;
 }

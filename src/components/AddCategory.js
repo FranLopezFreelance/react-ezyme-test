@@ -34,7 +34,7 @@ const AddCategory = ({setCategory}) => {
         onChange={handleInputChange} />
       <button 
         className="add-category"
-        onClick={handleAddCategory}>Agrega categoría</button>
+        onClick={handleAddCategory}>Buscar</button>
     </form>
   )
 }

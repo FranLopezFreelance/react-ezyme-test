@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 export const GifGridItem = ({url, title}) => {
   return (
-    <div className="gif">
-      <p>{title}</p>
-      <img className="gif-img" src={url} alt={title} />
-    </div>
+      <a href={url} target="blank" 
+        className="gif"
+        title={title}>
+        <p>{title}</p>
+        <img className="gif-img" src={url} alt={title} />
+      </a>
   )
 }
 
