@@ -9,7 +9,7 @@ const GifExpertApp = ({name}) => {
 
   return (
     <Fragment>
-      <h2>{name}</h2>
+      <h2 className="animate__animated animate__fadeIn">{name}</h2>
       <AddCategory setCategory={setCategory} />
       <hr />
       <ul>

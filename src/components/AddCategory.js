@@ -10,7 +10,7 @@ const AddCategory = ({setCategory}) => {
   }
 
   const handleAddCategory = () => {
-    if(inputValue.trim().length > 2){
+    if(inputValue.trim().length > 1){
       setCategory(cats => [inputValue, ...cats ]);
       setInputValue('');
     }
@@ -18,7 +18,7 @@ const AddCategory = ({setCategory}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(inputValue.trim().length > 2){
+    if(inputValue.trim().length > 1){
       setCategory(cats => [inputValue, ...cats ]);
       setInputValue('');
     }

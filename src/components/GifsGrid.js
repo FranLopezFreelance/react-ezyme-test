@@ -1,27 +1,26 @@
-import React, {  Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useGetGifs } from '../hooks/useGetGifs';
 import { GifGridItem } from './GifGridItem';
-
 
 export const GifsGrid = ({category}) => {
 
   const {images, loading} = useGetGifs(category);
 
   return (
-    <Fragment>
-      <h4>{category}</h4>
-      {(loading && <p className="loading">Buscando...</p>)}
+    <div className="gif-item">
+      <h4 className="animate__animated animate__backInDown">{category}</h4>
+      {(loading && <p className="animate__animated animate__flash loading">Buscando...</p>)}
         {
           (!images.length && !loading) ?
-          <p className="no-results">No se encontraron resultados</p> : 
+          <p className="animate__animated animate__heartBeat no-results">No se encontraron resultados</p> : 
           images.map(image => {
-            return <GifGridItem 
+            return <GifGridItem
                       key={image.id} 
                       {...image} />
           }) 
         }
-    </Fragment>
+    </div>
   )
 }
 

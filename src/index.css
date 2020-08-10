@@ -30,6 +30,11 @@ ul {
   background-color: rgb(190, 95, 95);
 }
 
+.gif-item {
+  border-bottom: 1px solid silver;
+  padding: 5px;
+}
+
 .add-category:focus, input:focus {
   outline: none;
 }

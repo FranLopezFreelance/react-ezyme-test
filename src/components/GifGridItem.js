@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const GifGridItem = ({url, title}) => {
   return (
       <a href={url} target="blank" 
-        className="gif"
+        className="animate__animated animate__backInUp gif"
         title={title}>
         <p>{title}</p>
         <img className="gif-img" src={url} alt={title} />
