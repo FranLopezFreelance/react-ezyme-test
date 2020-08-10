@@ -5,7 +5,7 @@ import { GifsGrid } from './components/GifsGrid';
 
 const GifExpertApp = ({name}) => {
 
-  const [categories, setCategory] = useState(['One Punch']);
+  const [categories, setCategory] = useState(['The Simpsons']);
 
   return (
     <Fragment>
