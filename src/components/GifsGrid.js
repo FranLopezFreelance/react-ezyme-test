@@ -6,10 +6,6 @@ import { GifGridItem } from './GifGridItem';
 
 export const GifsGrid = ({category}) => {
 
-  /* const [images, setImages] = useState([]);
-  useEffect(() => {
-    getGifs(category).then(setImages);
-  }, [category]); */
   const {images, loading} = useGetGifs(category);
 
   return (
@@ -17,11 +13,13 @@ export const GifsGrid = ({category}) => {
       <h4>{category}</h4>
       {(loading && <p className="loading">Buscando...</p>)}
         {
+          (!images.length && !loading) ?
+          <p className="no-results">No se encontraron resultados</p> : 
           images.map(image => {
             return <GifGridItem 
                       key={image.id} 
                       {...image} />
-          })
+          }) 
         }
     </Fragment>
   )
