@@ -6,7 +6,7 @@ const AddCategory = ({setCategory}) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => {
-    setInputValue(e.target.value)
+    setInputValue(e.target.value);
   }
 
   const handleAddCategory = () => {

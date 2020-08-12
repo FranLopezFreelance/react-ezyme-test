@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGridItem /> debe mostrar el componente correctamente 1`] = `
+<a
+  className="animate__animated animate__backInUp gif"
+  href="https://url.com"
+  target="blank"
+  title="Título"
+>
+  <p>
+    Título
+  </p>
+  <img
+    alt="Título"
+    className="gif-img"
+    src="https://url.com"
+  />
+</a>
+`;
