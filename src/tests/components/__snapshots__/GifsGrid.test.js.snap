@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <GifsGrid /> Debe de mostrar items cuando se cargan imágenes con useGetGifs 1`] = `
+<div
+  className="gif-item"
+>
+  <h4
+    className="animate__animated animate__backInDown"
+  >
+    Simpsons
+  </h4>
+  <GifGridItem
+    id="ABC"
+    key="ABC"
+    title="Cualquier cosa"
+    url="http://url.com/imgs/1.jpg"
+  />
+  <GifGridItem
+    id="BCD"
+    key="BCD"
+    title="Cualquier cosa"
+    url="http://url.com/imgs/1.jpg"
+  />
+</div>
+`;
+
+exports[`Pruebas en el <GifsGrid /> Debe de mostrarse correctamente 1`] = `
+<div
+  className="gif-item"
+>
+  <h4
+    className="animate__animated animate__backInDown"
+  >
+    Simpsons
+  </h4>
+  <p
+    className="animate__animated animate__flash loading"
+  >
+    Buscando...
+  </p>
+</div>
+`;

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import AddCategory from './components/AddCategory';
 import { GifsGrid } from './components/GifsGrid';
 
-const GifExpertApp = ({name}) => {
+const GifExpertApp = ({name, defaultCategories = []}) => {
 
-  const [categories, setCategory] = useState(['The Simpsons']);
+  const [categories, setCategory] = useState(defaultCategories);
 
   return (
     <Fragment>

@@ -5,4 +5,9 @@ import './index.css';
 
 const divRoot = document.getElementById('root');
 
-ReactDOM.render( <GifExpertApp name="Gif Expert App" />, divRoot );
+ReactDOM.render( 
+  <GifExpertApp 
+    name="Gif Expert App" 
+    defaultCategories={['Los Simpsons']} />, 
+    divRoot
+);

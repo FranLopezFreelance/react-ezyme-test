@@ -15,7 +15,7 @@ export const useGetGifs = (category) => {
           images,
           loading: false
         });
-      }, 1000);
+      }, 4000);
     });
   }, [category]);
 
